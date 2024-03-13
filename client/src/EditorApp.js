@@ -6,7 +6,7 @@ import "./App.css";
 
 const editorOptions = {
     scrollBeyondLastLine: false,
-    fontSize: "14px",
+    fontSize: "15px",
     folding: false,
     // lineDecorationsWidth: 15,
 };

@@ -6,7 +6,6 @@ import SignUp from './pages/SignUp';
 import EditorApp from './EditorApp';
 
 
-
 function App() {
   return (
     <>
