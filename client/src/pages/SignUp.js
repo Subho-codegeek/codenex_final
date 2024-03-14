@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import '../css/Sign.css'
 
@@ -8,14 +8,14 @@ const SignUp = () => {
 
     const handleLogin = (event) => {
       event.preventDefault(); 
-      navigate('/editor');
+      navigate('/room');
     };
 
   return (
     <div className='log-body'>
-    <div className="log-container" id="log-container">
-        <div className="log-form-container log-sign-up">
-            <form action='#' onSubmit={handleLogin}>
+    <div className="log-container sign-up" id="log-container">
+        <div className="log-form-container log-sign">
+            <div className='log-form'>
                 <h1>Create Account</h1>
                 <div className="log-social-icons">
                     <a href="#" className="log-icon"><i className="fa-brands fa-google"></i></a>
@@ -28,8 +28,9 @@ const SignUp = () => {
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <input type="password" placeholder="Confirm Password" />
-                <button>Sign Up</button>
-            </form>
+                <button onClick={handleLogin}>Sign Up</button>
+                <p>Already have an account? <Link to="/">Sign In</Link></p>
+            </div>
         </div>
     </div>
     </div>
